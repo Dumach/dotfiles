@@ -1,17 +1,17 @@
-## JBL hangszóró:
+## JBL Pebbles not working:
 (https://askubuntu.com/questions/15069/how-do-i-change-the-way-ubuntu-adjusts-my-volume-mixer-levels)
 (https://askubuntu.com/questions/1407885/how-to-uninstall-pipewire-and-go-back-to-pulseaudio)
 
-## Gyorsbillentyű hozzáadása:
+## Add shortkey to Gnome:
 
-### hozzáadás Debian-on
+### Adding to Debian
 ```bash
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "'gedit_launch'"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "'<Alt><Ctrl>Page_Down'"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "'/usr/bin/gedit'"
 ```
 
-## Led billenytűzet:
+## LED keyboard not lighting up when pressed scroll-lock:
 (https://superuser.com/questions/1156695/turn-on-off-backlit-xset-led-3-with-scroll-lock)
 ```bash
 #!/bin/bash
@@ -24,15 +24,15 @@ else
 fi 
 ```
 
-## Gnome játékok eltávolítása:
+## Gnome games delete:
 ```bash
 sudo apt purge iagno lightsoff four-in-a-row gnome-robots pegsolitaire gnome-2048 hitori gnome-klotski gnome-mines gnome-mahjongg gnome-sudoku quadrapassel swell-foop gnome-tetravex gnome-taquin aisleriot gnome-chess five-or-more gnome-nibbles tali ; sudo apt autoremove
 ```
 
-## Font hozzáadása:
+## Add fonts:
 (https://vitux.com/how-to-install-custom-fonts-on-a-debian-10-system/)
 
-## Make Debian look like Ubuntu:
+## Make Debian Gnome look like Ubuntu:
 (https://www.reddit.com/r/debian/comments/1cv1vqc/how_to_make_debian_look_like_ubuntu/)
 (https://askubuntu.com/questions/545741/why-is-shell-theme-disabled-in-gnome-tweak-tool)
 
