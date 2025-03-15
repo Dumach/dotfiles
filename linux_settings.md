@@ -42,3 +42,6 @@ sudo apt purge iagno lightsoff four-in-a-row gnome-robots pegsolitaire gnome-204
 ## When wifi won't connect on Fedora:
 (http://redhatgov.io/workshops/rhel_8/exercise1.5/)
 (https://gist.github.com/simonesestito/97d8cf8e05b7488083cedabcefd5d65c)
+
+## When migrating to a new machine, Fedora boot option missing
+(https://discussion.fedoraproject.org/t/create-new-fedora-in-efi-from-scratch/66513)
