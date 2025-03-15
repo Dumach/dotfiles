@@ -1,5 +1,6 @@
 ## JBL Pebbles not working:
 (https://askubuntu.com/questions/15069/how-do-i-change-the-way-ubuntu-adjusts-my-volume-mixer-levels)
+
 (https://askubuntu.com/questions/1407885/how-to-uninstall-pipewire-and-go-back-to-pulseaudio)
 
 ## Add shortkey to Gnome:
@@ -34,6 +35,7 @@ sudo apt purge iagno lightsoff four-in-a-row gnome-robots pegsolitaire gnome-204
 
 ## Make Debian Gnome look like Ubuntu:
 (https://www.reddit.com/r/debian/comments/1cv1vqc/how_to_make_debian_look_like_ubuntu/)
+
 (https://askubuntu.com/questions/545741/why-is-shell-theme-disabled-in-gnome-tweak-tool)
 
 ## Fractional Scaling:
@@ -41,6 +43,7 @@ sudo apt purge iagno lightsoff four-in-a-row gnome-robots pegsolitaire gnome-204
 
 ## When wifi won't connect on Fedora:
 (http://redhatgov.io/workshops/rhel_8/exercise1.5/)
+
 (https://gist.github.com/simonesestito/97d8cf8e05b7488083cedabcefd5d65c)
 
 ## When migrating to a new machine, Fedora boot option missing
