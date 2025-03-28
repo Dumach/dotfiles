@@ -46,5 +46,20 @@ sudo apt purge iagno lightsoff four-in-a-row gnome-robots pegsolitaire gnome-204
 
 (https://gist.github.com/simonesestito/97d8cf8e05b7488083cedabcefd5d65c)
 
-## When migrating to a new machine, Fedora boot option missing
+## When migrating to a new machine, Fedora boot option missing:
 (https://discussion.fedoraproject.org/t/create-new-fedora-in-efi-from-scratch/66513)
+
+## Set to lower Cpu frequency when system is idling:
+set-cpu-min-frequency.service:
+```bash
+   [Unit]
+   Description=Set CPU Minimum Frequency to 400 MHz
+   After=multi-user.target
+   
+   [Service]
+   Type=oneshot
+   ExecStart=/usr/bin/cpupower frequency-set -d 400MHz
+   
+   [Install]
+   WantedBy=multi-user.target
+```
