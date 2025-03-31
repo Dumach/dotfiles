@@ -63,3 +63,10 @@ set-cpu-min-frequency.service:
    [Install]
    WantedBy=multi-user.target
 ```
+
+
+## Turn off Avahi-daemon (bonjour, rendezevues, mDNS):
+```bash
+   sudo systemctl disable --now avahi-daemon.service
+   sudo systemctl disable --now avahi-daemon.socket
+```
