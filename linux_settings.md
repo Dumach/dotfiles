@@ -38,6 +38,9 @@ sudo apt purge iagno lightsoff four-in-a-row gnome-robots pegsolitaire gnome-204
 
 (https://askubuntu.com/questions/545741/why-is-shell-theme-disabled-in-gnome-tweak-tool)
 
+## Ubuntu terminal colors:
+(https://oatcookies.neocities.org/ubuntu-terminal-colors)
+
 ## Fractional Scaling:
 (https://www.reddit.com/r/debian/comments/1541fug/gnome_fractional_scaling_debian_12/)
 
