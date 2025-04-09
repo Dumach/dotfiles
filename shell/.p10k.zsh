@@ -2,7 +2,6 @@
 # Based on romkatv/powerlevel10k/config/p10k-lean.zsh, checksum 37983.
 # Wizard options: compatible, unicode, lean, 1 line, compact, concise,
 # instant_prompt=verbose.
-# Type `p10k configure` to generate another config.
 #
 # Config for Powerlevel10k with lean prompt style. Type `p10k configure` to generate
 # your own config based on it.
@@ -18,6 +17,8 @@
 [[ ! -o 'no_brace_expand' ]] || p10k_config_opts+=('no_brace_expand')
 'builtin' 'setopt' 'no_aliases' 'no_sh_glob' 'brace_expand'
 
+#####
+
 () {
   emulate -L zsh -o extended_glob
 
@@ -31,7 +32,8 @@
   # The list of segments shown on the left. Fill it with the most important segments.
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     # os_icon               # os identifier
-    context                 # user@hostname
+    # context                 # user@hostname
+    user
     dir                     # current directory
     vcs                     # git status
     prompt_char             # prompt symbol
