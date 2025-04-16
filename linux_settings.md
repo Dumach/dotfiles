@@ -67,6 +67,11 @@ set-cpu-min-frequency.service:
    WantedBy=multi-user.target
 ```
 
+## Lower TLS/Crypto version on Fedora:
+```bash
+update-crypto-policies --set LEGACY
+```
+(https://fedoraproject.org/wiki/Changes/StrongCryptoSettings2)
 
 ## Turn off Avahi-daemon (bonjour, rendezevues, mDNS):
 ```bash
