@@ -78,3 +78,18 @@ update-crypto-policies --set LEGACY
    sudo systemctl disable --now avahi-daemon.service
    sudo systemctl disable --now avahi-daemon.socket
 ```
+
+## Create a swapfile with btrfs:
+(https://wiki.archlinux.org/title/Btrfs#Swap_file)
+```bash
+btrfs subvolume create /swap
+
+btrfs filesystem mkswapfile --size 4g --uuid clear /swap/swapfile
+
+swapon /swap/swapfile
+```
+
+In /etc/fstab
+```bash
+/swap/swapfile none swap defaults 0 0
+```
