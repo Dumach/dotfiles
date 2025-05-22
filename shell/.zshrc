@@ -116,6 +116,9 @@ export LANG=hu_HU.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Alex
+alias fzfpb="fzf --preview \"bat --color=always --style=numbers --line-range=:500 {}\""
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
