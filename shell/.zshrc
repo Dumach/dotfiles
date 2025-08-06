@@ -118,6 +118,7 @@ export LANG=hu_HU.UTF-8
 
 # Alex
 alias fzfpb="fzf --preview \"bat --color=always --style=numbers --line-range=:500 {}\""
+alias mc="SHELL=/bin/bash /bin/mc"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
