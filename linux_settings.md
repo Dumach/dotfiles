@@ -36,6 +36,12 @@ else
   brightnessctl -d input3::scrolllock s 0
 fi
 ```
+Add user into `video` and `input` group and restart
+```bash
+sudo usermod -aG video ${USER}
+sudo usermod -aG input ${USER}
+sudo reboot
+```
 
 ## Gnome games delete:
 ```bash
