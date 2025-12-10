@@ -13,7 +13,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 ```
 
 ## LED keyboard not lighting up when pressed scroll-lock:
-(https://superuser.com/questions/1156695/turn-on-off-backlit-xset-led-3-with-scroll-lock)
+[Xorg](https://superuser.com/questions/1156695/turn-on-off-backlit-xset-led-3-with-scroll-lock):
 ```bash
 #!/bin/bash
 on=$(xset -q | grep 'Scroll Lock:' | cut -d ":" -f 7)
@@ -23,6 +23,18 @@ if [ $on == "off" ]; then
 else
    xset -led named "Scroll Lock"
 fi 
+```
+
+Wayland `toggle-backlight.sh`:
+```bash
+#!/bin/bash
+current_status=$(brightnessctl -d input3::scrolllock | grep -oP '\d+%' | head -n 1)
+
+if [[ $current_status == "0%" ]]; then
+  brightnessctl -d input3::scrolllock s 1
+else
+  brightnessctl -d input3::scrolllock s 0
+fi
 ```
 
 ## Gnome games delete:
