@@ -52,6 +52,9 @@ bindkey "^[[1;5D" backward-word
 bindkey '\e[5~' history-search-backward
 bindkey '\e[6~' history-search-forward
 
+# zsh shift select
+source /home/alex/.zsh_custom/zsh-shift-select/zsh-shift-select.plugin.zsh
+
 # autosuggestions
 # requires zsh-autosuggestions
 source /home/alex/.zsh_custom/zsh-autosuggestions/zsh-autosuggestions.zsh
