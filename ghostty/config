@@ -49,6 +49,6 @@
 # resize-overlay-duration = 4s 200ms
 
 theme = dark:Warp_Dark, light:Warp_Light
-adjust-cursor-thickness = 2
+adjust-cursor-thickness = 4
 keybind = ctrl+shift+arrow_left=unbind
 keybind = ctrl+shift+arrow_right=unbind
