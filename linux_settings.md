@@ -3,6 +3,29 @@
 
 (https://askubuntu.com/questions/1407885/how-to-uninstall-pipewire-and-go-back-to-pulseaudio)
 
+### JBL Pebbles on KDE 6.6:
+
+```bash
+sudo mkdir -p /etc/wireplumber/wireplumber.conf.d/
+sudo nano /etc/wireplumber/wireplumber.conf.d/50-jbl-pebbles-fix.conf
+```
+
+Put this config into the newly created `.conf` file
+```
+monitor.alsa.rules = [
+  {
+    matches = [
+      { device.name = "~alsa_card.usb-Harman_International_Industries_JBL_Pebbles*" }
+    ]
+    actions = {
+      update-props = {
+        api.alsa.ignore-dB = true
+      }
+    }
+  }
+]
+```
+
 ## Add shortkey to Gnome:
 
 ### Adding to Debian
